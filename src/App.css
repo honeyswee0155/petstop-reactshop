@@ -15,18 +15,30 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 1rem 0;
+  text-align: center;
+  font-size: 1.5rem;
   color: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 
-.App-link {
-  color: #61dafb;
+.auth-link {
+  color: white !important;
 }
+
+.auth-link:hover {
+  color: #E52020 !important;
+}
+/* End of .auth-link:hover */
+
+.top-bar a {
+  color: white !important;
+}
+
+.top-bar a:hover {
+  color: #E52020 !important;
+}
+
 
 @keyframes App-logo-spin {
   from {
@@ -35,4 +47,43 @@
   to {
     transform: rotate(360deg);
   }
+}
+body {
+  font-family: 'Quicksand', sans-serif;
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.logo {
+  height: 50px;
+  object-fit: contain;
+}
+
+.navbar .nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.navbar .nav-btn.red {
+  background-color: #ff4d4f;
+  color: white;
+  padding: 6px 14px;
+  border-radius: 8px;
+}
+
+.shop-header {
+  background-color: #ffe8e9;
+  color: #333;
+}
+
+.shop-header .typewriter-text {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.shop-header .subtitle {
+  font-size: 1.2rem;
+  color: #777;
 }

@@ -1,0 +1,77 @@
+.booking-container {
+    font-family: 'Quicksand', sans-serif;
+    background: #f8f9fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .booking-header {
+    background: #1a1a1a;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  .booking-header h1, .booking-container h2 {
+    color: #e52020;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .auth-section {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .auth-section button {
+    background: #e52020;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+  }
+  
+  .auth-section button:hover, .auth-section button.active {
+    background: #c21717;
+  }
+  
+  label {
+    display: block;
+    margin-top: 1rem;
+    font-weight: 600;
+  }
+  
+  input, select, button {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.25rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button.submit-btn {
+    background: #e52020;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    margin-top: 1rem;
+  }
+  
+  button.submit-btn:hover {
+    background: #c21717;
+  }

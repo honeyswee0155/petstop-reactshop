@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Book an Appointment - PetStop</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  
+  <style>
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background: #f8f9fa;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #1a1a1a;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    .container {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 1rem;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h1, h2 {
+      color: #e52020;
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+    .auth-section {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-bottom: 1rem;
+    }
+    .auth-section button {
+      background: #e52020;
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: 600;
+    }
+    .auth-section button:hover {
+      background: #c21717;
+    }
+    label {
+      display: block;
+      margin-top: 1rem;
+      font-weight: 600;
+    }
+    input, select, button {
+      width: 100%;
+      padding: 0.5rem;
+      margin-top: 0.25rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    button.submit-btn {
+      background: #e52020;
+      color: white;
+      font-weight: 600;
+      cursor: pointer;
+      border: none;
+      margin-top: 1rem;
+    }
+    button.submit-btn:hover {
+      background: #c21717;
+    }
+    .hidden {
+      display: none !important;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1><i class="fas fa-calendar-check"></i> Book an Appointment</h1>
+    <p>Schedule a visit for your pet with our professional team</p>
+  </header>
+
+  <div class="container">
+    <div class="auth-section">
+      <button onclick="showLogin()">Member Login</button>
+      <button onclick="showGuest()">Continue as Guest</button>
+    </div>
+
+    <form id="login-form">
+      <label for="email"><i class="fas fa-envelope"></i> Email Address</label>
+      <input type="email" id="email" placeholder="your@email.com" required>
+      
+      <label for="password"><i class="fas fa-lock"></i> Password</label>
+      <input type="password" id="password" required>
+      
+      <button type="submit" class="submit-btn"><i class="fas fa-sign-in-alt"></i> Login</button>
+      
+      <p>Don't have an account? <a href="#">Register here</a></p>
+    </form>
+
+    <form id="guest-form" class="hidden">
+      <h2><i class="fas fa-user"></i> Owner & Pet Details</h2>
+      
+      <label for="fullname">Full Name</label>
+      <input type="text" id="fullname" placeholder="Your full name" required>
+      
+      <label for="guest-email">Email Address</label>
+      <input type="email" id="guest-email" placeholder="your@email.com" required>
+      
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" placeholder="Your phone number" required>
+      
+      <label for="pet">Pet Type</label>
+      <select id="pet" required>
+        <option value="">--Select--</option>
+        <option value="dog">Dog</option>
+        <option value="cat">Cat</option>
+        <option value="bird">Bird</option>
+      </select>
+      
+      <label for="date">Preferred Date</label>
+      <input type="date" id="date" required>
+      
+      <label for="time">Preferred Time</label>
+      <input type="time" id="time" required>
+      
+      <button type="submit" class="submit-btn">Book Appointment</button>
+    </form>
+  </div>
+
+  <script>
+    function showLogin() {
+      document.getElementById('login-form').classList.remove('hidden');
+      document.getElementById('guest-form').classList.add('hidden');
+    }
+    function showGuest() {
+      document.getElementById('guest-form').classList.remove('hidden');
+      document.getElementById('login-form').classList.add('hidden');
+    }
+  </script>
+</body>
+</html>

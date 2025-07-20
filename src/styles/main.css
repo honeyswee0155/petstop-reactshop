@@ -1,0 +1,30 @@
+:root {
+    --petstop-red: #E52020;
+    --petstop-dark: #1a1a1a;
+  }
+  
+  .top-bar {
+    background-color: var(--petstop-dark);
+    color: white;
+    font-size: 0.9rem;
+  }
+  
+  .highlight {
+    color: var(--petstop-red);
+    font-weight: 600;
+  }
+  
+  .hero-banner {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+  }
+  
+  .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+  }
