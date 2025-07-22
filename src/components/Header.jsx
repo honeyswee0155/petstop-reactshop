@@ -22,7 +22,7 @@ const Header = () => (
       <div className="container">
         <Link className="navbar-brand" to="/">
           <img 
-            src="/petstop-logo.png" 
+            src="/petstop-logo.jpg" 
             alt="PetStop" 
             className="logo"
             style={{ height: '80px', width: 'auto' }}

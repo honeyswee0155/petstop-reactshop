@@ -43,7 +43,7 @@ function App() {
         <header className="shop-header">
           <div className="container">
             <img 
-              src="/images/petstop-logo.jpg" 
+              src="/petstop-logo.jpg" 
               alt="PetStop Shop" 
               className="shop-logo" 
             />

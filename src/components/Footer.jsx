@@ -5,7 +5,7 @@ const Footer = () => {
     <footer className="bg-dark text-white pt-4 pb-3 mt-5">
       <div className="container text-center">
         <img 
-          src="/images/petstop-logo.png" 
+          src="/petstop-logo.jpg" 
           alt="PetStop Logo" 
           style={{ width: '120px', marginBottom: '1rem' }} 
         />
